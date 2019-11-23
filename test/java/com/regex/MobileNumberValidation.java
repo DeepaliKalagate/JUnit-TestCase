@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class MobileNumberValidation
 {
-    private MobileNumberValidationTest mobileNumberValidationTest;
+    private com.regex.MobileNumberValidationTest mobileNumberValidationTest;
     @Test
     public void CheckMobileNumber_ifValid_ShouldReturnTrue()
     {
@@ -17,6 +17,6 @@ public class MobileNumberValidation
     @Before
     public void initializing()
     {
-        mobileNumberValidationTest=new MobileNumberValidationTest();
+        mobileNumberValidationTest=new com.regex.MobileNumberValidationTest();
     }
 }
