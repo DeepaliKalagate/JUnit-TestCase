@@ -14,7 +14,7 @@ import java.util.Collection;
 public class EmailValidation
 {
     private String string;
-    private EmailValidationTest emailValidationTest;
+    private static EmailValidationTest emailValidationTest;
     private boolean expectedResult;
 
     public EmailValidation(String string,boolean expectedResult)
@@ -24,13 +24,12 @@ public class EmailValidation
     }
 
     @BeforeClass
-    public void initialize()
+    public static void initialize()
     {
-        emailValidationTest=new EmailValidationTest();
+        emailValidationTest=new com.regex.EmailValidationTest();
     }
 
     @Parameterized.Parameters
-
     public static Collection<Object> emailValidation()
     {
         Object[][] emailValidation=new Object[][]{
